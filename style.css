@@ -1,0 +1,100 @@
+:root {
+    --accent-color: rgb(0, 85, 197);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.photo img {
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+#cv {
+    display: block;
+    width: 21cm;
+    height: 27cm;
+    background-color: #eee;
+    margin: 0.5cm;
+    margin-left: auto;
+    margin-right: auto;    
+    border: 2px solid gray;
+    box-shadow: 3px 3px 5px lightgrey;   
+    color: #333;
+}
+
+#cv:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-left {    
+    float: left;
+    width: 40%;    
+    height: 100%;
+    border-right: 2px solid gray;    
+    margin: 20px;    
+}
+
+.column-right {    
+    float: left;
+    width: 60%;    
+    height: 100%;
+    margin: 20px;    
+}
+
+.first-name {    
+    color: gray;
+    font-size: 1.5em;
+    text-align: center;  
+    margin-top: 10px;  
+    margin-bottom: -15px;
+    text-transform: uppercase;
+}
+
+.last-name {
+    color: #333;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.position {
+    color: var(--accent-color);
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.employment-stage__company {
+    font-weight: bold;
+}
+.employment-stage__dates {
+    color:#666;
+}
+
+.education-stage__header {
+    font-weight: bold;
+}
+
