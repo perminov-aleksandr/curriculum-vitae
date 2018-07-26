@@ -1,5 +1,7 @@
 :root {
     --accent-color: rgb(0, 85, 197);
+    --muted-text-color: #666;
+    --border-color: #BBB;
 }
 
 html, body {
@@ -12,7 +14,7 @@ html, body {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 .photo img {
@@ -26,15 +28,13 @@ body {
 
 #cv {
     display: block;
-    width: 21cm;
-    height: 27cm;
-    background-color: #eee;
-    margin: 0.5cm;
+    width: 210mm;
+    height: 297mm;
+    background-color: #eee;    
     margin-left: auto;
     margin-right: auto;    
-    border: 2px solid gray;
-    box-shadow: 3px 3px 5px lightgrey;   
-    color: #333;
+    color: #444;
+    padding: 30px;
 }
 
 #cv:after {
@@ -43,27 +43,30 @@ body {
     clear: both;
 }
 
+.column {
+    height: 100%;    
+    padding: 0;    
+}
+
 .column-left {    
     float: left;
-    width: 40%;    
-    height: 100%;
-    border-right: 2px solid gray;    
-    margin: 20px;    
+    width: 40%;        
+    border-right: 2px solid var(--border-color);    
+    padding-right: 30px;
 }
 
 .column-right {    
     float: left;
-    width: 60%;    
-    height: 100%;
-    margin: 20px;    
+    width: 60%;        
+    padding-left: 30px;
 }
 
 .first-name {    
     color: gray;
     font-size: 1.5em;
     text-align: center;  
-    margin-top: 10px;  
-    margin-bottom: -15px;
+    margin-top: 20px;  
+    margin-bottom: -5px;
     text-transform: uppercase;
 }
 
@@ -72,6 +75,7 @@ body {
     font-size: 3em;
     text-align: center;
     text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif
 }
 
 .position {
@@ -79,22 +83,122 @@ body {
     font-size: 1em;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 1px
+}
+
+.contacts a {
+    color: inherit;
+}
+
+.contacts dl dt {
+    font-weight: bold
+}
+.contacts dl dd {
+    margin-left: 0;
+    margin-bottom: 10px;
+    color: var(--muted-text-color)
 }
 
 h3 {
     text-align: center;
     font-size: 1.5em;
     text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 45px;
+}
+h3:before, h3:after {
+    content: "";
+    display: inline-block;
+    background-color: var(--border-color);
+    width: 1.5em;   
+    height: 0.1em;
+    margin-top: 0.65em;
+    margin-bottom: 0.25em;    
+}
+h3:before {
+    margin-right: 0.3em;
+}
+h3:after {
+    margin-left: 0.3em;
 }
 
+.employment-stage {
+    margin-bottom: 20px;
+}
 .employment-stage__company {
     font-weight: bold;
+    text-transform: uppercase;
+}
+.employment-stage__description {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: justify;
 }
 .employment-stage__dates {
-    color:#666;
+    color: var(--accent-color);
+    float: right;
+    text-transform: uppercase;
+}
+.employment-stage__skills {
+    color:var(--muted-text-color);
+    font-style: italic;    
+    margin: 0;
 }
 
+.education-stage {
+    margin-bottom: 20px;
+}
 .education-stage__header {
     font-weight: bold;
+    text-transform: uppercase;
+}
+.education-stage__subheader {
+    color: var(--muted-text-color)
+}
+.education-stage__dates {
+    text-transform: uppercase;
+    color: var(--accent-color);
+    float: right;
+}
+.education-stage__description {
+    text-align: justify;
+    margin-top: 10px;;
+}
+
+.profile p {
+    text-align: center;
+    margin-top: 0;
+}
+.profile h3,
+.skills h3,
+.contacts h3
+{
+    margin-bottom: 5px;
+    margin-top: 60px;
+}
+
+.skills ul {
+    margin-top: 0;
+    padding-left: 0;    
+}
+
+.skills ul li {
+    list-style-type: none;    
+}
+
+.skills ul li::before {
+    content: ""; 
+    display: inline-block;
+    width: 5px;
+    height: 5px;    
+    padding: 0;
+    margin-right: 8px;
+    margin-bottom: 0.15em;
+    background-color: var(--accent-color); 
+    border-radius: 50%;
+}
+
+.contacts dl {
+    margin-top: 0;
 }
 
