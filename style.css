@@ -59,10 +59,13 @@ body {
     width: 60%;
 }
 
+.name {
+    text-align: center;
+}
+
 .first-name {    
     color: gray;
     font-size: 1.2rem;
-    text-align: center;  
     margin-top: 20px;  
     margin-bottom: -5px;
     text-transform: uppercase;
@@ -71,7 +74,6 @@ body {
 .last-name {
     color: #333;
     font-size: 2rem;
-    text-align: center;
     text-transform: uppercase;
     font-family: 'Times New Roman', Times, serif
 }
@@ -79,13 +81,11 @@ body {
 .position {
     color: var(--accent-color);
     font-size: 1.2rem;
-    text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.1rem
 }
 
 h3 {
-    /* text-align: center; */
     font-size: 1.25rem;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -341,22 +341,19 @@ h3:after {
     }
 
     .column-left {
-        width: 100%; 
-        border-right: none;        
-        padding-right: 0;
+        
+        border-right: none;
     }
 
     .column-right {
-        width: 100%; 
-        padding-left: 0;         
+        
     }
 
     .visit-card {
-        width: 40%;
+        margin-bottom: 20px;
     }
 
     .general-info {
-        width: 55%;
     }
 
     .profile h3,
@@ -364,6 +361,15 @@ h3:after {
     .contacts h3
     {
         margin-top: 0;
+    }
+
+    .name {
+        text-align: left;
+    }
+
+    .position {
+        letter-spacing: 0;
+        line-height: 1;
     }
 }
 
@@ -374,8 +380,8 @@ h3:after {
 
     .page {
         width: unset;
-        height: unset;
-        padding: 15px;
+        height: unset;        
+        flex-direction: column;
     }
 
     .column {
@@ -385,16 +391,23 @@ h3:after {
     .column-left {
         width: 100%; 
         border-right: none;
-        padding-right: 0;
+        
     }
 
     .column-right {
         width: 100%; 
-        padding-left: 0;   
     }
 
     .photo img {
         height: auto;
         width: 60%;
+    }
+
+    .employment-stage__header {
+        flex-direction: column;
+    }
+
+    .employment-stage__header__dates {
+        margin-left: 0;
     }
 }
