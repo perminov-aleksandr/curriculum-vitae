@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Curriculum Vitae</title>
+		<title>Perminov Aleksandr - Curriculum Vitae</title>
 		
 		<link rel="stylesheet" href="style.css" type="text/css">
 		<meta name="viewport" content="width=device-width" >
@@ -28,7 +28,7 @@
 					<div class="profile">
 						<h3>Profile</h3>
 						<p>
-							As an organized and responsible individual, i am interested in product quality from both sides: maintanable code and satisfying user experience.
+							As an organized and responsible individual, i am interested in product quality in terms of code maintainability as well as satisfying user experience.
 							The knowledge gained from university, internship and long-term corporate experience shaped my ability to work efficiently as a part of a team or on my own.
 						</p>
 					</div>
@@ -46,40 +46,69 @@
 					</div>
 					<div class="contacts">
 						<h3>Contacts</h3>
-						<dl>
-							<dt><a href="mailto:perminov.a@mail.ru">perminov.a@mail.ru</a></dt>
-							<dd>Email</dd>
+						<div class="contacts__github"><a href="http://github.com/perminov-aleksandr">GitHub profile</a></div>
 
-							<dt>+7 (911) 933-00-97</dt>
-							<dd>Phone Number</dd>
-						</dl>
+						<div class="contacts__email"><a href="mailto:perminov.a@mail.ru">perminov.a@mail.ru</a></div>						
+
+						<div class="contacts__phone">+7(911)933-00-97</div>
+
+						<address class="contacts__address">
+							Yaroslavskiy 40 <br />
+							Saint-Petersburg <br>
+							Russia
+						</address>
+					</div>
+					<div class="details">
+						<h3>Details</h3>
+
+						<div class="date-of-birth">
+							Date of Birth <b>24.06.1993</b>
+						</div>
+
+						<div class="marital-status">
+							Marital Status: <b>Single</b>
+						</div>
+
+						<div class="nationality">
+							Nationality: <b>Russian</b>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="column column-right">				
+			<div class="column column-right">
 				<div class="employment">
-					<h3>Employment</h3>
+					<h3>Work Experience</h3>
 					<div class="employment-stage">
-						<span class="employment-stage__company">NordWestSoft</span>
-						<div class="employment-stage__dates">
-							Mar 2012 - Present
-						</div>						
+						<div class="employment-stage__header">
+							<span class="employment-stage__header__company">NordWestSoft</span>
+							<div class="employment-stage__header__dates">
+								Mar 2012 - Present
+							</div>
+						</div>
+						<div class="employment-stage__position">
+							Software Developer
+						</div>
 						<p class="employment-stage__description">
-							Working on web applications as a full-stack developer within a team. Implementing user interface features with functionality on server side.
-							Developing and managing databases, optimizing performance of server actions and communications with database.
+							Work on web applications as a full-stack developer within a team. Implement user interface features with functionality on server side.
+							Develop and manage databases, optimizing performance of server actions and communications with database.
 						</p>
 						<p class="employment-stage__skills">
 							C# | ASP.NET | SQL | EntityFramework | UI | HTML\CSS | SCSS | NPM | JavaScript 
 						</p>
 					</div>
 					<div class="employment-stage">
-						<span class="employment-stage__company">AGT International</span>
-						<div class="employment-stage__dates">
-							Jun 2014 - Sep 2014
+						<div class="employment-stage__header">
+							<span class="employment-stage__header__company">AGT International</span>
+							<div class="employment-stage__header__dates">
+								Jun 2014 - Sep 2014
+							</div>
+						</div>
+						<div class="employment-stage__position">
+							Software Development Intern
 						</div>
 						<p class="employment-stage__description">
 							Short-term internship within a R&D team to develop prototype solution and technologies on specific smart city related topic.
-							Creating math models and implementing programmed simulation. Analysing simulation results.
+							Create math models and implement programmed simulation. Analyze simulation results.
 						</p>
 						<p class="employment-stage__skills">
 							Java | SQL | Math modelling | Programmed simulations | Data analysis
@@ -88,38 +117,60 @@
 				</div>
 				<div class="education">
 					<h3>Education</h3>
-					<div class="education-stage">						
+					<div class="education-stage">
 						<div class="education-stage__header">
-							Saint-Petersburg <br> Polytechnical University
-						</div>
-						<div class="education-stage__dates">
-							2015 - 2017
+							<div class="education-stage__header__name">
+								Saint-Petersburg <br> Polytechnical University
+							</div>
+							<div class="education-stage__header__dates">
+								2015 - 2017
+							</div>
 						</div>
 						<div class="education-stage__subheader">
 							Software Engineering Master`s degree 
-						</div>						
-						<p class="education-stage__description">
-							Projects: Web-client for custom file database using ASP.NET Core and existing custom ORM;<br />
-							Android application to capture signals from external Bluetooth connected device, process it and analyse in real-time;<br>
-							Android game using Unity3D engine and bluetooth net for two players.
-						</p>
+						</div>
+						<div class="education-stage__projects-title">
+							Projects
+						</div>
+						<div class="education-stage__projects">
+							<div class="education-stage__projects__item">
+								Web-client for custom file database using ASP.NET Core and existing custom ORM
+							</div>
+							<div class="education-stage__projects__item">
+								Android application to capture signals from external Bluetooth connected device, process it and analyse in real-time
+							</div>
+							<div class="education-stage__projects__item">
+								Android game using Unity3D engine and bluetooth net for two players
+							</div>
+						</div>
 					</div>
 
-					<div class="education-stage">						
+					<div class="education-stage">
 						<div class="education-stage__header">
-							Saint-Petersburg  <br>Polytechnical University
-						</div>
-						<div class="education-stage__dates">
-							2011 - 2015
+							<div class="education-stage__header__name">
+								Saint-Petersburg <br>Polytechnical University
+							</div>
+							<div class="education-stage__header__dates">
+								2011 - 2015
+							</div>
 						</div>
 						<div class="education-stage__subheader">
 							Software Engineering Bachelor`s degree
-						</div>						
-						<p class="education-stage__description">
-							Projects: Features for Web-application to display GEO-data of set of objects and analyse set of objects using Business Intellegence system;<br/>
-							Team Contest of program a robot to search path using specific algorithms;
-							Tetris Android game using OpenGL library;
-						</p>
+						</div>
+						<div class="education-stage__projects-title">
+							Projects
+						</div>
+						<div class="education-stage__projects">
+							<div class="education-stage__projects__item">
+								Features for Web-application to display GEO-data of set of objects and analyse set of objects using Business Intellegence system
+							</div>
+							<div class="education-stage__projects__item">
+								Team Contest of program a robot to search path using specific algorithms
+							</div>
+							<div class="education-stage__projects__item">
+								Tetris Android game using OpenGL library
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
