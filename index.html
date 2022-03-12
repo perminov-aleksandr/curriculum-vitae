@@ -49,16 +49,11 @@
                     </div>
                     <div class="contacts">
                         <h3>Contacts</h3>
-                        <div class="contacts__github"><a href="http://github.com/perminov-aleksandr">GitHub profile</a></div>
+                        <div class="contacts__github"><a href="http://github.com/perminov-aleksandr">GitHub: perminov-aleksandr</a></div>
 
                         <div class="contacts__email"><a href="mailto:perminov.a@mail.ru">perminov.a@mail.ru</a></div>
 
                         <div class="contacts__phone"><a href="tel:+79119330097">+7(911)933-00-97</a></div>
-
-                        <address class="contacts__address">
-                            Saint-Petersburg <br>
-                            Russia
-                        </address>
                     </div>
                     <div class="details">
                         <h3>Details</h3>
@@ -178,12 +173,12 @@
                     <div class="project__description">
                         <p>
                             Web portal that consists of multiple parts: public part with managed information, <br>
-                            personal part behind authorization providing access to multiple sources and to request executing business process, <br>
+                            user-specific part behind authorization providing access to multiple sources and to request executing business process, <br>
                             administration part that allows manage structured information available in public part
                         </p>
                         <p>
                             All of that built using ASP.NET Core framework as back-end technology and multiple small Vue.js SPA applications as front-end technology.
-                            Also Webpack is used to build JavaScript entry point bundles and separate common bundle as one of many steps of client side performance optimization.
+                            Also Webpack is used to build JavaScript/TypeScript entry point bundles and separate common bundle as one of many steps of client side performance optimization.
                         </p>
                     </div>
                     <div class="project__responsibilities">
@@ -195,7 +190,37 @@
                         <div class="project__responsibilities__item">Communicate with customer and clarify specifications, fix bugs</div>
                     </div>
                     <div class="project__tags">
-                        ASP.NET Core | EntityFramework | Vue.js | JavaScript | Webpack | HTML/CSS | SCSS | Bootstrap
+                        ASP.NET Core | EntityFramework | Vue.js | JavaScript | TypeScript | Webpack | HTML/CSS | SCSS | Bootstrap
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project__name">
+                        Plants Online
+                    </div>
+                    <div class="project__type">
+                        ASP.NET Core based application streaming and control CCTV cameras
+                    </div>
+                    <div class="project__description">
+                        <p>
+                            Provide streaming CCTV cameras hub of Saint-Petersburg Botanical Garden.
+                            Implement video streaming relay of RTSP traffic from camera to client web browser using ffmpeg tool and HLS protocol.
+                        </p>
+                        <p>
+                            Additionaly, implement manual camera movement control from web browser using HTTP API of camera.
+                            Ensure low latency between command being given and result of command being observed with the help of
+                            MPEG1 decoder in JavaScript.
+                        </p>
+                    </div>
+                    <div class="project__responsibilities">
+                        Responsibilities (Project fully completed by myself)
+                        <div class="project__responsibilities__item">Analyze technical specifications and business needs</div>
+                        <div class="project__responsibilities__item">Design architecture of backend, choose tools, protocols and technologies</div>
+                        <div class="project__responsibilities__item">Build REST API methods using ASP.NET Core, ffmpeg and couple</div>
+                        <div class="project__responsibilities__item">Implement front end pages using Razor, JavaScript, jQuery</div>
+                    </div>
+                    <div class="project__tags">
+                        ASP.NET Core | JavaScript | HTML/CSS | Video streaming
                     </div>
                 </div>
 
@@ -219,32 +244,6 @@
                     </div>
                     <div class="project__tags">
                         ASP.NET Core | EntityFramework | Vue.js | JavaScript | Webpack | HTML/CSS | SCSS
-                    </div>
-                </div>
-
-                <div class="project">
-                    <div class="project__name">
-                        BookTrailer
-                    </div>
-                    <div class="project__type">
-                        Web Application
-                    </div>
-                    <div class="project__description">
-                        <p>
-                            Azure Cloud computing based ASP.NET web application that allows customize video by choosing template, images, music, parts composition, preview result using in-browser 3D animation viewer, and order final video to render using Azure batch jobs.
-                        </p>
-                    </div>
-                    <div class="project__responsibilities">
-                        Responsibilities
-                        <div class="project__responsibilities__item">Transform requirement document to tasks in part of web application
-                        </div>
-                        <div class="project__responsibilities__item">Implement user interface according to task related to business process
-                        </div>
-                        <div class="project__responsibilities__item">Develop back-end operations to query database and provide data to front-end
-                        </div>
-                    </div>
-                    <div class="project__tags">
-                        Azure Cloud | ASP.NET MVC | Web API | EntityFramework | Javascript | HTML/CSS
                     </div>
                 </div>
 
