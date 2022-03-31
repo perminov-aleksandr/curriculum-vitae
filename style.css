@@ -35,7 +35,7 @@ body {
 }
 
 .page_endless {
-    height: unset;  
+    height: unset;
 }
 
 @media screen {
@@ -125,7 +125,7 @@ h3 {
 
 .employment-stage__description {
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     text-align: justify;
     line-height: 1.4;
 }
@@ -142,6 +142,7 @@ h3 {
 
 .education-stage__header {
     display: flex;
+    margin-bottom: 10px;
 }
 
 .education-stage__header__name {
@@ -191,6 +192,47 @@ h3 {
     border-left-color: var(--accent-color);
 }
 
+.education-stage__degree {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.education-stage__degree__title {
+    flex: 1 1 auto;
+    margin-right: 5px;
+}
+
+.education-stage__degree__dates {
+    margin-left: auto;
+    color: var(--accent-color);
+}
+
+.employment-stage__responsibilities {
+    list-style-type: none;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.employment-stage__responsibilities__item {
+    display: flex;
+    align-items: baseline;
+    flex: 1 1 auto;
+}
+
+.employment-stage__responsibilities__item::before {
+    flex: 0 0 auto;
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    padding: 0;
+    margin-right: 8px;
+    margin-bottom: 0.15rem;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
 .profile p {
     /* text-align: center; */
     margin-top: 0;
@@ -213,10 +255,13 @@ h3 {
 @media screen {
     .skills ul li {
         list-style-type: none;
+        display: flex;
+        align-items: baseline;
     }
     .skills ul li::before {
+        flex: 0 0 auto;
         content: "";
-        display: inline-block;
+        display: block;
         width: 5px;
         height: 5px;
         padding: 0;
